@@ -5,12 +5,12 @@ import { Trash2, Download } from 'lucide-react';
 const BudgetCalculator = () => {
   const [totalBudget, setTotalBudget] = useState(1000000);
   const [expenses, setExpenses] = useState([]);
-  const [exchangeRates, setExchangeRates] = useState({
+  const exchangeRates = {
     USD: 1300,
     EUR: 1400,
     GBP: 1600,
     KRW: 1
-  });
+};
 
   const [newExpense, setNewExpense] = useState({
     description: '',
